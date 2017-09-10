@@ -310,18 +310,10 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq helm-ag-base-command "C:\\Users\\Mark\\Documents\\ripgrep\\ripgrep-0.6.0-x86_64-pc-windows-msvc\\rg --vimgrep --no-heading")
-  ;;(setq helm-ag-base-command "C:\\Users\\Mark\\Documents\\ripgrep\\ripgrep-0.6.0-x86_64-pc-windows-msvc\\rg --vimgrep")
-  ;;(setq helm-ag-base-command "C:\\Users\\Mark\\Documents\\Ag\\ag --vimgrep")
-  ;;(setq projectile-indexing-method 'alien)
   (setq projectile-indexing-method 'native)
   (setq inhibit-read-only t)
-  ;;(setenv "PATH" (concat (getenv "PATH") ":/sw/bin"))
-  ;;(setq exec-path (append exec-path '("/sw/bin")))
-  ;;(setenv "PATH" (concat (getenv "PATH") ":C:/Users/Mark/Documents/Git/usr/bin"))
-  ;;(setq exec-path (append exec-path '("C:/Users/Mark/Documents/Git/usr/bin")))
   (setenv "PATH" (concat "C:/Users/Mark/Documents/Git/usr/bin:" (getenv "PATH")))
   (setq exec-path (append '("C:/Users/Mark/Documents/Git/usr/bin") exec-path))
-
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
